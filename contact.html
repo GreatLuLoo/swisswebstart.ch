@@ -4,37 +4,47 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Kontakt – Swiss Web Start</title>
-  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Fonts (Headlines + Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css?v=3" />
 </head>
 <body>
 
   <header class="nav">
     <div class="container nav-inner">
       <a class="brand" href="index.html">
-        <span class="logo"></span>
-        <span>Swiss Web Start</span>
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name">Swiss Web Start</span>
       </a>
+
       <nav class="nav-links">
         <a href="index.html">Home</a>
         <a href="about.html">Über uns</a>
         <a href="services.html">Dienstleistungen</a>
         <a href="hours-location.html">Arbeitszeiten & Standort</a>
-        <a class="nav-cta" href="contact.html">Kontakt</a>
+        <a href="contact.html" aria-current="page" class="nav-cta">Kontakt</a>
       </nav>
     </div>
   </header>
 
   <main class="section">
     <div class="container">
-      <h2>Kontakt</h2>
-      <p class="muted">
-        Schreiben Sie uns – wir melden uns schnellstmöglich.
-      </p>
+      <!-- Head -->
+      <div class="section-head reveal">
+        <h2>Kontakt</h2>
+        <p>
+          Schreib uns kurz – wir melden uns schnellstmöglich bei dir.
+        </p>
+      </div>
 
-      <div class="split" style="margin-top:12px">
+      <div class="split" style="margin-top:16px">
         <!-- Formular -->
-        <div class="card">
-          <strong>Kostenlose Anfrage</strong>
+        <div class="card reveal delay-1">
+          <h3>Kostenlose Anfrage</h3>
 
           <form
             class="form"
@@ -64,9 +74,6 @@
             <!-- Optional: Betreff -->
             <input type="hidden" name="_subject" value="Neue Anfrage – Swiss Web Start">
 
-            <!-- Optional: Weiterleitung nach Absenden -->
-            <!-- <input type="hidden" name="_redirect" value="https://deine-domain.ch/danke.html"> -->
-
             <button class="btn btn-primary" type="submit">
               Anfrage senden
             </button>
@@ -74,11 +81,11 @@
         </div>
 
         <!-- Info -->
-        <div class="card">
-          <strong>Was wir von Ihnen brauchen:</strong>
+        <div class="card reveal delay-2">
+          <h3>Was wir von dir brauchen</h3>
           <ul class="ul">
             <li>Name & Branche</li>
-            <li>Welches Format? (z.B. Onepager, mehrere Seiten)</li>
+            <li>Welche Website? (Onepager, mehrere Seiten)</li>
             <li>Gibt es bereits eine Domain oder ein Logo?</li>
           </ul>
 
@@ -87,12 +94,25 @@
           </p>
         </div>
       </div>
+
+      <!-- Extra CTA -->
+      <div class="card reveal delay-3" style="margin-top:18px">
+        <h3>Was passiert danach?</h3>
+        <p class="muted" style="margin-top:8px">
+          Wir melden uns per E-Mail, klären kurz deine Wünsche
+          und schicken dir einen transparenten Vorschlag.
+        </p>
+      </div>
     </div>
   </main>
 
   <footer class="footer">
-    <div class="container">
-      © 2026 Swiss Web Start · Schweiz
+    <div class="container footer-inner">
+      <div>© 2026 Swiss Web Start · Schweiz</div>
+      <div class="footer-links">
+        <a href="services.html">Pakete</a>
+        <a href="about.html">Über uns</a>
+      </div>
     </div>
   </footer>
 
