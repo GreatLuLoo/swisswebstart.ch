@@ -617,10 +617,11 @@ input:focus, textarea:focus{
   .hero-row{ gap: 12px; }
   .hero-logo-mark{ width: 68px; height: 68px; border-radius: 24px; }
 }
-.hero-image{
-  margin: 22px auto 0;
-  max-width: 520px;
-  width: 100%;
-  border-radius: 18px;
-  box-shadow: 0 30px 80px rgba(0,0,0,.45);
+
+.hero-logo-img{
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+  display: block;
 }
+
