@@ -146,9 +146,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   transform: rotate(20deg) translateX(-30%);
   animation: sheen 3.6s var(--ease2) infinite;
   opacity:.55;
-
-  /* ✅ CLICK FIX (sicher) */
-  pointer-events: none;
+  pointer-events: none; /* click-fix */
 }
 
 .brand-name{
@@ -290,10 +288,9 @@ p{ margin: 0; color: var(--muted); }
   text-align: center;
 }
 
-/* ✅ CLICK FIX: hero overlays dürfen keine Klicks blocken */
 .hero-top::before,
 .hero-top::after{
-  pointer-events: none;
+  pointer-events: none; /* click-fix */
 }
 
 .hero-top::before{
@@ -344,6 +341,7 @@ p{ margin: 0; color: var(--muted); }
   inset: 11px;
   border-radius: 20px;
   border: 1px solid rgba(255,255,255,.35);
+  pointer-events: none; /* click-fix */
 }
 .hero-logo-mark:hover{
   transform: translateY(-2px) rotate(-1deg);
@@ -418,7 +416,6 @@ p{ margin: 0; color: var(--muted); }
     box-shadow var(--dur) var(--ease2);
 }
 
-/* ✅ CLICK FIX: overlay darf keine Klicks blocken (Kontakt-Inputs!) */
 .card::before,
 .feature::before,
 .price::before,
@@ -429,9 +426,7 @@ p{ margin: 0; color: var(--muted); }
   background: radial-gradient(600px 240px at 20% 0%, rgba(79,124,255,.16), transparent 55%);
   opacity: 0;
   transition: opacity var(--dur) var(--ease);
-
-  /* 🔥 das ist der entscheidende Fix */
-  pointer-events: none;
+  pointer-events: none; /* click-fix */
 }
 
 .card:hover,
