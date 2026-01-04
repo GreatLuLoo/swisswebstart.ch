@@ -4,15 +4,25 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Über uns – Swiss Web Start</title>
-  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Fonts (Headlines + Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css?v=3" />
 </head>
 <body>
   <header class="nav">
     <div class="container nav-inner">
-      <a class="brand" href="index.html"><span class="logo"></span><span>Swiss Web Start</span></a>
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name">Swiss Web Start</span>
+      </a>
+
       <nav class="nav-links">
         <a href="index.html">Home</a>
-        <a href="about.html">Über uns</a>
+        <a href="about.html" aria-current="page">Über uns</a>
         <a href="services.html">Dienstleistungen</a>
         <a href="hours-location.html">Arbeitszeiten & Standort</a>
         <a class="nav-cta" href="contact.html">Kontakt</a>
@@ -22,42 +32,53 @@
 
   <main class="section">
     <div class="container">
-      <h2>Über uns</h2>
-      <p class="muted">
-        Wir sind ein kleines Team aus der Schweiz. Unser Ziel: kleinen Unternehmen einen starken, modernen Online-Auftritt
-        ermöglichen – ohne komplizierte Prozesse und ohne überteuerte Agenturpreise.
-      </p>
+      <div class="section-head reveal">
+        <h2>Über uns</h2>
+        <p>
+          Wir sind ein kleines Team aus der Schweiz. Unser Ziel: kleinen Unternehmen einen starken,
+          modernen Online-Auftritt ermöglichen – ohne komplizierte Prozesse und ohne überteuerte Agenturpreise.
+        </p>
+      </div>
 
-      <div class="grid-3" style="grid-template-columns:repeat(2,1fr); margin-top:12px">
-        <div class="card">
-          <strong>Lenny</strong>
-          <div class="muted">Webdesign & Entwicklung</div>
-          <div style="margin-top:10px" class="muted">
-            Fokus auf saubere Umsetzung, Performance, Mobile-Optimierung.
-          </div>
+      <!-- Team -->
+      <div class="grid-3" style="grid-template-columns:repeat(2,1fr); margin-top:14px">
+        <div class="card reveal delay-1">
+          <h3>Lenny</h3>
+          <p class="muted">Webdesign & Entwicklung</p>
+          <p style="margin-top:10px">
+            Fokus auf saubere Umsetzung, Performance und Mobile-Optimierung.
+          </p>
         </div>
-        <div class="card">
-          <strong>Partner</strong>
-          <div class="muted">Design & Kundenberatung</div>
-          <div style="margin-top:10px" class="muted">
+
+        <div class="card reveal delay-2">
+          <h3>Partner</h3>
+          <p class="muted">Design & Kundenberatung</p>
+          <p style="margin-top:10px">
             Fokus auf Struktur, Texte, Angebot & ein Auftreten, das Vertrauen schafft.
-          </div>
+          </p>
         </div>
       </div>
 
-      <div class="card" style="margin-top:14px">
-        <strong>Was uns wichtig ist</strong>
+      <!-- Values -->
+      <div class="card reveal delay-3" style="margin-top:18px">
+        <h3>Was uns wichtig ist</h3>
         <ul class="ul">
           <li>Einfach & verständlich (kein Tech-Blabla)</li>
-          <li>Schnelle Kommunikation</li>
-          <li>Fixe Pakete, klare Resultate</li>
+          <li>Schnelle, direkte Kommunikation</li>
+          <li>Fixe Pakete & klare Resultate</li>
         </ul>
       </div>
     </div>
   </main>
 
   <footer class="footer">
-    <div class="container">© 2026 Swiss Web Start · Schweiz</div>
+    <div class="container footer-inner">
+      <div>© 2026 Swiss Web Start · Schweiz</div>
+      <div class="footer-links">
+        <a href="contact.html">Kontakt</a>
+        <a href="services.html">Pakete</a>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
