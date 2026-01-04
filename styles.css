@@ -619,9 +619,9 @@ input:focus, textarea:focus{
 }
 
 .hero-logo-img{
-  width: 60px;
-  height: 60px;
-  border-radius: 14px;
+  width: 55px;
+  height: 55px;
+  border-radius: 12px;
   object-fit: contain;
   display: block;
 }
