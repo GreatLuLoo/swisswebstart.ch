@@ -638,4 +638,10 @@ input:focus, textarea:focus{
   align-items: center;
   justify-content: center;
 }
+.nav-logo{
+  height: 34px;
+  width: auto;
+  display: block;
+  border-radius: 8px; /* abrunden, optional */
+}
 
