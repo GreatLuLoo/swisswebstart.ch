@@ -619,12 +619,12 @@ input:focus, textarea:focus{
 }
 
 .hero-logo-img{
-  width: 48%;
-  height: 48%;
+  width: 46%;
+  height: auto;
   object-fit: contain;
   display: block;
-  margin: auto;
 }
+
 
 .hero-logo-mark{
   width: 82px;
