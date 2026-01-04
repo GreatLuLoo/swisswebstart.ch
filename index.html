@@ -1,44 +1,125 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Swiss Web Start</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Swiss Web Start – Erste Website für dein Unternehmen</title>
+  <meta name="description" content="Moderne, schnelle Websites für kleine Unternehmen in der Schweiz. Fair, persönlich und mobil-optimiert." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <span class="logo" aria-hidden="true"></span>
+        <span>Swiss Web Start</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">Über uns</a>
+        <a href="services.html">Dienstleistungen</a>
+        <a href="hours-location.html">Arbeitszeiten & Standort</a>
+        <a class="nav-cta" href="contact.html">Kostenlose Anfrage</a>
+      </nav>
+    </div>
+  </header>
 
-<header class="header">
-  <div class="logo">Swiss Web Start</div>
-  <nav class="nav">
-    <a href="index.html">Home</a>
-    <a href="about.html">Über uns</a>
-    <a href="services.html">Dienstleistungen</a>
-    <a href="hours-location.html">Arbeitszeiten & Standort</a>
-    <a href="contact.html">Kontakt</a>
-  </nav>
-</header>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-card">
+          <p class="kicker">Für lokale Unternehmen in der Schweiz</p>
+          <h1>Moderne Websites, die Anfragen bringen.</h1>
+          <p class="lead">
+            Wir erstellen schnelle, mobile Websites für kleine Unternehmen – klar strukturiert, professionell gestaltet
+            und einfach zu pflegen.
+          </p>
 
-<section class="hero">
-  <div class="hero-content">
-    <h1>Swiss Web Start</h1>
-    <p>Moderne Websites für kleine Unternehmen in der Schweiz</p>
-    <a href="contact.html" class="btn-primary">Kostenlose Anfrage</a>
-  </div>
-</section>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="contact.html">Kostenlose Anfrage</a>
+            <a class="btn" href="services.html">Pakete & Preise ansehen</a>
+          </div>
 
-<section class="content">
-  <h2>Warum Swiss Web Start?</h2>
-  <div class="cards">
-    <div class="card">Modernes Design</div>
-    <div class="card">Faire Preise</div>
-    <div class="card">Persönliche Betreuung</div>
-  </div>
-</section>
+          <div style="margin-top:16px; display:flex; gap:10px; flex-wrap:wrap">
+            <span class="badge">✅ Mobile-Optimiert</span>
+            <span class="badge">⚡ Schnell & sauber</span>
+            <span class="badge">🇨🇭 Persönlich</span>
+          </div>
+        </div>
 
-<footer>
-  <p>© 2026 Swiss Web Start · Schweiz</p>
-</footer>
+        <div class="hero-side" role="img" aria-label="Arbeitsplatz / Webdesign"></div>
+      </div>
+    </section>
 
+    <section class="section">
+      <div class="container">
+        <h2>Warum Swiss Web Start?</h2>
+        <p class="muted">Kurz, klar – und genau das, was ein KMU braucht.</p>
+
+        <div class="grid-3" style="margin-top:12px">
+          <div class="card">
+            <strong>Modernes Design</strong>
+            <div class="muted">Saubere Optik, klare Struktur, wirkt sofort professionell.</div>
+          </div>
+          <div class="card">
+            <strong>Faire Preise</strong>
+            <div class="muted">Fixe Pakete ohne Überraschungen – transparent & planbar.</div>
+          </div>
+          <div class="card">
+            <strong>Persönliche Betreuung</strong>
+            <div class="muted">Direkter Kontakt – schnelle Antworten, schnelle Umsetzung.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <div class="card">
+          <h2 style="margin-top:0">Für wen ist das?</h2>
+          <p class="muted">
+            Ideal für Betriebe, die bisher keine Website haben oder eine alte Seite ersetzen möchten:
+            Coiffeur, Handwerker, Restaurant, Studio, Verein, Praxis, lokale Services.
+          </p>
+          <ul class="ul">
+            <li>Eine Seite, die auf Google gefunden wird (Basics)</li>
+            <li>Kontakt, Standort, Öffnungszeiten – alles auf einen Blick</li>
+            <li>Seriöses Auftreten, das Vertrauen schafft</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2 style="margin-top:0">So läuft’s ab</h2>
+          <ul class="ul">
+            <li><b>1. Kurz-Call (10–15 Min.)</b> – Ziele & Inhalt klären</li>
+            <li><b>2. Design-Entwurf</b> – wir zeigen dir ein Layout</li>
+            <li><b>3. Umsetzung</b> – Website wird gebaut & mobil optimiert</li>
+            <li><b>4. Livegang</b> – Domain verbinden, fertig ✅</li>
+          </ul>
+          <div class="hero-actions" style="margin-top:12px">
+            <a class="btn btn-primary" href="contact.html">Unverbindlich anfragen</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="price">
+          <h2 style="margin:0 0 8px">Bereit für euren Online-Auftritt?</h2>
+          <p class="muted" style="margin:0 0 14px">
+            Schreib uns kurz, was du machst – wir melden uns schnellstmöglich mit einem Vorschlag.
+          </p>
+          <a class="btn btn-primary" href="contact.html">Kostenlose Anfrage</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      © 2026 Swiss Web Start · Schweiz
+    </div>
+  </footer>
 </body>
 </html>
