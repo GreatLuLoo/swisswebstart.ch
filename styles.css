@@ -645,3 +645,27 @@ input:focus, textarea:focus{
   border-radius: 8px; /* abrunden, optional */
 }
 
+/* =============================
+   Impressum / Rechtliches
+============================= */
+
+.impressum,
+.card h3 + p{
+  line-height: 1.6;
+}
+
+.impressum p,
+.card h3 + p,
+.card h3 ~ p{
+  max-width: 80ch;       /* bessere Lesbarkeit */
+}
+
+.impressum strong{
+  color: rgba(255,255,255,.92);
+  font-weight: 600;
+}
+
+/* etwas mehr Ruhe zwischen Absätzen */
+.card p + p{
+  margin-top: 10px;
+}
